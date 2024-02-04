@@ -108,16 +108,23 @@ h1 {
 }
 
 .notes {
-  margin: 50px 0 0 20px;
+  margin: 50px 0 0 0;
   display: flex;
+  flex-wrap: wrap;
+  max-width: 1920px;
+  justify-content: center;
 }
 
 .note-work,
 .note-shop,
-.note-other {
+.note-other,
+.note {
   width: 200px;
   border: 1px solid black;
-  margin-right: 30px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .title {
@@ -131,8 +138,16 @@ h1 {
 .note-content {
   padding: 10px;
   background-color: rgb(0, 201, 0);
+  flex-grow: 1;
+  overflow-wrap: break-word;
 }
 
 .delete-note {
   cursor: pointer;
+}
+
+.error {
+  font-size: 12px;
+  color: red;
+  display: none;
 }

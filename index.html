@@ -23,14 +23,17 @@
       <div class="popup-wrapper">
         <h1>Dodaj notatkę</h1>
         <p>Wybierz kategorię:</p>
-        <select name="" id="">
-          <option value="" selected disabled>--Wybierz kategorię--</option>
-          <option value="zakupy">Zakupy</option>
-          <option value="praca">Praca</option>
-          <option value="inne">Inne</option>
+        <select name="" id="select">
+          <option value="choose" selected disabled>
+            --Wybierz kategorię--
+          </option>
+          <option value="shop">Zakupy</option>
+          <option value="work">Praca</option>
+          <option value="other">Inne</option>
         </select>
         <p class="enter-note-content">Wpisz treść notatki:</p>
         <input type="text" class="note-input" />
+        <p class="error">Uzupełnij wszystkie pola!</p>
         <div class="buttons">
           <button class="save">
             <i class="fa-regular fa-floppy-disk"></i>Zapisz
@@ -41,17 +44,17 @@
         </div>
       </div>
     </div>
-
     <div class="notes">
-      <div class="note-work">
+      <!-- <div class="note-work">
         <div class="title">
-          <p>Zakupy</p>
+          <p class="note-title">Zakupy</p>
           <p class="delete-note">X</p>
         </div>
         <p class="note-content">Treść</p>
       </div>
-      <div class="note-shop"></div>
-      <div class="note-other"></div>
+      <div class="note-shop">
+      </div>
+      <div class="note-other"></div> -->
     </div>
     <script
       src="https://kit.fontawesome.com/3fbc7566d2.js"
