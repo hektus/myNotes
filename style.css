@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Wix+Madefor+Display&display=swap");
+
 body {
   background-color: rgb(197, 202, 197);
 }
@@ -6,6 +8,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Wix Madefor Display", sans-serif;
 }
 
 header {
@@ -32,7 +35,9 @@ h1 {
 }
 
 .add,
-.delete {
+.delete,
+.save,
+.cancel {
   margin-left: 10px;
   padding: 10px 15px;
   border-radius: 5px;
@@ -48,6 +53,86 @@ h1 {
   background-color: rgb(156, 161, 156);
 }
 
-.menu i {
+.menu i,
+.buttons i {
   margin-right: 3px;
+}
+
+.popup-add {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  height: 300px;
+  width: 450px;
+  display: none;
+  flex-direction: column;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 0 0 5px black;
+  justify-content: space-around;
+}
+
+.popup-wrapper {
+  margin: 0 30px;
+}
+
+.popup-add h1,
+.popup-add p,
+.popup-add input,
+.popup-add select {
+  width: 100%;
+}
+
+.popup-wrapper p {
+  margin-bottom: 5px;
+}
+
+.popup-add h1 {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.note-input {
+  height: 50px;
+}
+
+.enter-note-content {
+  margin-top: 30px;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.notes {
+  margin: 50px 0 0 20px;
+  display: flex;
+}
+
+.note-work,
+.note-shop,
+.note-other {
+  width: 200px;
+  border: 1px solid black;
+  margin-right: 30px;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: rgb(0, 177, 0);
+  font-weight: bold;
+}
+
+.note-content {
+  padding: 10px;
+  background-color: rgb(0, 201, 0);
+}
+
+.delete-note {
+  cursor: pointer;
 }
