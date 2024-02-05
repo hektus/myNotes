@@ -109,15 +109,13 @@ h1 {
 
 .notes {
   margin: 50px 0 0 0;
+  /* margin: 50px; */
   display: flex;
   flex-wrap: wrap;
   max-width: 1920px;
   justify-content: center;
 }
 
-.note-work,
-.note-shop,
-.note-other,
 .note {
   width: 200px;
   border: 1px solid black;

@@ -46,6 +46,18 @@ function saveNote() {
     </div>
     <p class="${contentColor()}">${noteInput.value}</p>
   `;
+
+  const deleteQuery = [...document.querySelectorAll(".delete-note")];
+  deleteQuery.forEach((el) => {
+    el.addEventListener("click", deleteNote.bind(el));
+  });
+
+  noteInput.value = "";
+  categorySelect.selectedIndex = 0;
+}
+
+function deleteNote() {
+  this.parentNode.parentNode.remove();
 }
 
 //show popup add notes
